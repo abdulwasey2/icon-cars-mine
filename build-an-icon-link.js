@@ -10,6 +10,7 @@ customElements.define('build-an-icon-link', class extends HTMLElement {
         a.style.borderColor = this.getAttribute('border-color');
         a.style.borderWidth = '1px';
         a.style.borderStyle = 'solid';
+        a.href = '#';
         this.replaceWith(a);
     }
 });
