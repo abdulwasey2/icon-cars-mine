@@ -1,0 +1,35 @@
+body {
+    /* Yeh iss liye add kiya hai kyunke <header> ke upar aur neechay margin aa raha tha */
+    margin: 0;
+}
+
+.header {
+    height: 80px;
+    /* Yahan se code samajhna hai */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Yahan tak samajhna hai */
+    background: linear-gradient(to bottom, #3E5155, #4C5F63);
+}
+
+.logo-image {
+    /* Header ki height ka 100% lega */
+    height: 100%;
+    margin-left: 30px;
+}
+
+.unordered-list-containing-links {
+    text-transform: uppercase;
+    display: inline-flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.unordered-list-containing-links li:not(:last-child) a {
+    color: white;
+}
+
+.unordered-list-containing-links li:last-child a {
+    background-color: #D1DD51;
+}
